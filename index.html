@@ -27,13 +27,20 @@
       background: white;
       width: 100%;
       max-width: 430px;
-      padding: 35px 25px;
+      padding: 25px;
       border-radius: 28px;
       box-shadow: 0 10px 30px rgba(70, 40, 100, 0.2);
     }
 
+    .imagem {
+      width: 100%;
+      max-width: 380px;
+      border-radius: 20px;
+      margin-bottom: 15px;
+    }
+
     .emoji {
-      font-size: 55px;
+      font-size: 45px;
     }
 
     h1 {
@@ -43,7 +50,7 @@
     }
 
     h2 {
-      font-size: 25px;
+      font-size: 24px;
       margin: 8px 0 25px;
     }
 
@@ -58,7 +65,7 @@
 
     .info {
       font-size: 19px;
-      line-height: 1.7;
+      line-height: 1.8;
       margin: 20px 0;
     }
 
@@ -69,9 +76,11 @@
       background: #7b42c5;
       color: white;
       text-decoration: none;
+      border: none;
       border-radius: 30px;
       font-size: 18px;
       font-weight: bold;
+      cursor: pointer;
     }
 
     .botao:hover {
@@ -89,6 +98,9 @@
 
   <div class="convite">
 
+    <!-- IMAGEM DO CONVITE -->
+    <img src="imagem.png" alt="Convite de aniversário" class="imagem">
+
     <div class="emoji">🎉💜🎂</div>
 
     <h1>Tá convidado!</h1>
@@ -101,13 +113,14 @@
 
     <div class="info">
       📅 <b>12 de outubro</b><br>
+      🕖 <b>Começa às 19h</b><br>
       📍 <b>Rio de Janeiro</b><br>
-      📍 <b>No PARME</b>
+      📍 <b>Greco</b>
     </div>
 
-    <a class="botao" href="#">
+    <button class="botao" onclick="euVou()">
       💜 Eu vou!
-    </a>
+    </button>
 
     <div class="final">
       Espero você para comemorar comigo! ✨
@@ -115,91 +128,25 @@
 
   </div>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=width-device, initial-scale=1.0">
-    <title>Tá convidado! 💜</title>
+  <script>
+    function euVou() {
+      const numero = "5524974058995";
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+      const mensagem =
+        "🎉 Oi! Eu vou ao aniversário do Benjamin! 💜\n" +
+        "📅 12 de outubro\n" +
+        "🕖 Começa às 19h\n" +
+        "📍 Greco";
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #7000ff, #bc00dd); /* Seu fundo degradê */
-            color: #3b245c;
-            text-align: center;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column; /* Deixa o botão alinhado certinho */
-        }
+      const link =
+        "https://wa.me/" +
+        numero +
+        "?text=" +
+        encodeURIComponent(mensagem);
 
-        /* Estilo do seu botão roxo */
-        .botao-confirmar {
-            background-color: #8A2BE2; 
-            color: white;
-            border: none;
-            padding: 15px 32px;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 20px;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            transition: 0.3s;
-        }
-
-        .botao-confirmar:hover {
-            background-color: #6A1B9A;
-            transform: scale(1.05);
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Botão que muda de texto ao ser clicado -->
-    <button class="botao-confirmar" id="btnConvite" onclick="confirmar()">
-        Confirmar Presença
-    </button>
-
-    <script>
-        function confirmar() {
-            document.getElementById("btnConvite").innerText = "Eu vou!";
-        }
-    </script>
+      window.open(link, "_blank");
+    }
+  </script>
 
 </body>
 </html>
-<button onclick="confirmarPresenca()">EU VOU! 💜</button>
-
-<script>
-function confirmarPresenca() {
-  const mensagem = "Oi! Eu vou ao aniversário! 🎉💜";
-  const numero = "5524974058995";
-
-  window.open(
-    "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem),
-    "_blank"
-  );
-}
-</script>
-<script>
-function euVou() {
-  const numero = "5524974058995";
-  const mensagem = "🎉 Oi! Eu vou ao aniversário do Benjamin! 💜";
-  const link = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
-
-  window.open(link, "_blank");
-}
-</script>
-
-<button onclick="euVou()">
-  Eu vou! 💜
-</button>
