@@ -1,12 +1,12 @@
 
 
 
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Tá convidado! 💜</title>
 
   <style>
@@ -18,90 +18,76 @@
       margin: 0;
       min-height: 100vh;
       font-family: Arial, sans-serif;
-      background: #ffffff;
+      background: white;
       color: #3b245c;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 25px;
+      text-align: center;
+      padding: 25px 15px;
       position: relative;
-      overflow: hidden;
     }
 
-    /* DECORAÇÃO DO FUNDO */
+    /* DECORAÇÃO */
     .decoracao {
-      position: fixed;
+      position: absolute;
       inset: 0;
       pointer-events: none;
-      z-index: 0;
+      overflow: hidden;
     }
 
     .sol {
       position: absolute;
-      top: 25px;
-      left: 25px;
-      font-size: 55px;
+      top: 15px;
+      left: 15px;
+      font-size: 45px;
     }
 
     .lua {
       position: absolute;
-      top: 25px;
-      right: 25px;
-      font-size: 55px;
+      top: 15px;
+      right: 15px;
+      font-size: 45px;
     }
 
     .flor {
       position: absolute;
-      font-size: 45px;
+      font-size: 38px;
     }
 
     .flor1 {
-      bottom: 25px;
-      left: 20px;
+      top: 150px;
+      left: 8px;
     }
 
     .flor2 {
-      bottom: 25px;
-      right: 20px;
+      top: 150px;
+      right: 8px;
     }
 
     .flor3 {
-      top: 45%;
-      left: 15px;
+      bottom: 30px;
+      left: 10px;
     }
 
     .flor4 {
-      top: 45%;
-      right: 15px;
+      bottom: 30px;
+      right: 10px;
     }
 
-    .flor5 {
-      bottom: 10%;
-      left: 22%;
-    }
-
-    .flor6 {
-      bottom: 10%;
-      right: 22%;
-    }
-
-    /* CARTÃO */
+    /* CONVITE */
     .convite {
       position: relative;
-      z-index: 1;
+      z-index: 2;
       width: 100%;
       max-width: 430px;
+      margin: 65px auto 40px;
+      padding: 28px 22px;
       background: white;
-      padding: 28px;
-      border-radius: 28px;
       border: 3px solid #eadcff;
+      border-radius: 28px;
       box-shadow: 0 10px 30px rgba(70, 40, 100, 0.18);
-      text-align: center;
     }
 
     .emoji {
-      font-size: 45px;
-      margin-bottom: 5px;
+      font-size: 43px;
     }
 
     h1 {
@@ -112,7 +98,7 @@
 
     h2 {
       font-size: 22px;
-      margin: 8px 0 22px;
+      margin: 8px 0 25px;
     }
 
     .idade {
@@ -150,22 +136,35 @@
       margin-top: 25px;
       font-size: 17px;
     }
+
+    @media (max-width: 500px) {
+      .sol,
+      .lua {
+        font-size: 38px;
+      }
+
+      .flor {
+        font-size: 30px;
+      }
+
+      .convite {
+        margin-top: 60px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- FUNDO BRANCO COM SOL, LUA E FLORES -->
+  <!-- FUNDO BRANCO + SOL + LUA + FLORES -->
   <div class="decoracao">
     <div class="sol">☀️</div>
     <div class="lua">🌙</div>
 
     <div class="flor flor1">🌸</div>
-    <div class="flor flor2">🌷</div>
-    <div class="flor flor3">🌼</div>
+    <div class="flor flor2">🌼</div>
+    <div class="flor flor3">🌷</div>
     <div class="flor flor4">🌺</div>
-    <div class="flor flor5">🌸</div>
-    <div class="flor flor6">🌼</div>
   </div>
 
   <!-- CONVITE -->
@@ -202,6 +201,7 @@
 
   <script>
     function euVou() {
+
       const numero = "5524974058995";
 
       const mensagem =
