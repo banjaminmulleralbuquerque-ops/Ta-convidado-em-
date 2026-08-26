@@ -1,51 +1,149 @@
-  
-  
-  
-    
-    
-    
-    
-  
-  
-  
-  
-
-<!-- IMAGEM -->  
-<img src="imagem.png" alt="Imagem do convite" class="imagem">  
-
-<div class="emoji">🎉💜🎂</div>  
-
-<h1>Tá convidado!</h1>  
-
-<h2>para comemorar meu aniversário 🥳</h2>  
-
-<div class="idade">  
-  Vou fazer 10 anos! 🎈  
-</div>  
-
-<div class="info">  
-  📅 <b>12 de outubro</b><br>  
-  🕖 <b>Começa às 19h</b><br>  
-  📍 <b>Volta Redonda (VR) - RJ</b><br>  
-  📍 <b>Greco</b><br>  
-  🏠 <b>Rua Dezenove-A, 152 - Bela Vista</b><br>  
-  <b>Volta Redonda - RJ</b>  
-</div>  
-
-<button class="botao" onclick="euVou()">  
-  💜 Eu vou!  
-</button>  
-
-<div class="final">  
-  Espero você para comemorar comigo! ✨  
-</div>  
+Convite de aniversário 
 
 
-  
-  
-    
-  
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tá convidado! 💜</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #d8c4ff, #b9e7ff);
+      color: #3b245c;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+    }
+
+    .convite {
+      background: white;
+      width: 100%;
+      max-width: 430px;
+      padding: 25px;
+      border-radius: 28px;
+      box-shadow: 0 10px 30px rgba(70, 40, 100, 0.2);
+    }
+
+    .emoji {
+      font-size: 45px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 10px 0;
+      color: #7b42c5;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 8px 0 25px;
+    }
+
+    .idade {
+      font-size: 24px;
+      font-weight: bold;
+      background: #eee1ff;
+      padding: 12px;
+      border-radius: 18px;
+      margin: 20px 0;
+    }
+
+    .info {
+      font-size: 18px;
+      line-height: 1.7;
+      margin: 20px 0;
+    }
+
+    .botao {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 15px 25px;
+      background: #7b42c5;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .botao:hover {
+      background: #6330a5;
+    }
+
+    .final {
+      margin-top: 25px;
+      font-size: 17px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="convite">
+
+    <div class="emoji">🎉💜🎂</div>
+
+    <h1>Tá convidado!</h1>
+
+    <h2>para comemorar meu aniversário 🥳</h2>
+
+    <div class="idade">
+      Vou fazer 10 anos! 🎈
+    </div>
+
+    <div class="info">
+      📅 <b>12 de outubro</b><br>
+      🕖 <b>Começa às 19h</b><br>
+      📍 <b>Volta Redonda (VR) - RJ</b><br>
+      📍 <b>Greco</b><br>
+      🏠 <b>Rua Dezenove-A, 152 - Bela Vista</b><br>
+      <b>Volta Redonda - RJ</b>
+    </div>
+
+    <button class="botao" onclick="euVou()">
+      💜 Eu vou!
+    </button>
+
+    <div class="final">
+      Espero você para comemorar comigo! ✨
+    </div>
+
+  </div>
+
+  <script>
+    function euVou() {
+      const numero = "5524974058995";
+
+      const mensagem =
+        "🎉 Oi! Eu vou ao aniversário do Benjamin! 💜\n" +
+        "📅 12 de outubro\n" +
+        "🕖 Começa às 19h\n" +
+        "📍 Greco\n" +
+        "🏠 Rua Dezenove-A, 152 - Bela Vista, Volta Redonda - RJ";
+
+      const link =
+        "https://wa.me/" +
+        numero +
+        "?text=" +
+        encodeURIComponent(mensagem);
+
+      window.open(link, "_blank");
+    }
+  </script>
+
+</body>
+</html>
 
 
