@@ -1,227 +1,51 @@
+  
+  
+  
+    
+    
+    
+    
+  
+  
+  
+  
+
+<!-- IMAGEM -->  
+<img src="imagem.png" alt="Imagem do convite" class="imagem">  
+
+<div class="emoji">🎉💜🎂</div>  
+
+<h1>Tá convidado!</h1>  
+
+<h2>para comemorar meu aniversário 🥳</h2>  
+
+<div class="idade">  
+  Vou fazer 10 anos! 🎈  
+</div>  
+
+<div class="info">  
+  📅 <b>12 de outubro</b><br>  
+  🕖 <b>Começa às 19h</b><br>  
+  📍 <b>Volta Redonda (VR) - RJ</b><br>  
+  📍 <b>Greco</b><br>  
+  🏠 <b>Rua Dezenove-A, 152 - Bela Vista</b><br>  
+  <b>Volta Redonda - RJ</b>  
+</div>  
+
+<button class="botao" onclick="euVou()">  
+  💜 Eu vou!  
+</button>  
+
+<div class="final">  
+  Espero você para comemorar comigo! ✨  
+</div>  
 
 
+  
+  
+    
+  
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Tá convidado! 💜</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
-      background: white;
-      color: #3b245c;
-      text-align: center;
-      padding: 25px 15px;
-      position: relative;
-    }
-
-    /* DECORAÇÃO */
-    .decoracao {
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      overflow: hidden;
-    }
-
-    .sol {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      font-size: 45px;
-    }
-
-    .lua {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      font-size: 45px;
-    }
-
-    .flor {
-      position: absolute;
-      font-size: 38px;
-    }
-
-    .flor1 {
-      top: 150px;
-      left: 8px;
-    }
-
-    .flor2 {
-      top: 150px;
-      right: 8px;
-    }
-
-    .flor3 {
-      bottom: 30px;
-      left: 10px;
-    }
-
-    .flor4 {
-      bottom: 30px;
-      right: 10px;
-    }
-
-    /* CONVITE */
-    .convite {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-      max-width: 430px;
-      margin: 65px auto 40px;
-      padding: 28px 22px;
-      background: white;
-      border: 3px solid #eadcff;
-      border-radius: 28px;
-      box-shadow: 0 10px 30px rgba(70, 40, 100, 0.18);
-    }
-
-    .emoji {
-      font-size: 43px;
-    }
-
-    h1 {
-      font-size: 40px;
-      margin: 10px 0;
-      color: #7b42c5;
-    }
-
-    h2 {
-      font-size: 22px;
-      margin: 8px 0 25px;
-    }
-
-    .idade {
-      font-size: 23px;
-      font-weight: bold;
-      background: #eee1ff;
-      padding: 13px;
-      border-radius: 18px;
-      margin: 20px 0;
-    }
-
-    .info {
-      font-size: 18px;
-      line-height: 1.7;
-      margin: 20px 0;
-    }
-
-    .botao {
-      margin-top: 15px;
-      padding: 15px 28px;
-      background: #7b42c5;
-      color: white;
-      border: none;
-      border-radius: 30px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .botao:hover {
-      background: #6330a5;
-    }
-
-    .final {
-      margin-top: 25px;
-      font-size: 17px;
-    }
-
-    @media (max-width: 500px) {
-      .sol,
-      .lua {
-        font-size: 38px;
-      }
-
-      .flor {
-        font-size: 30px;
-      }
-
-      .convite {
-        margin-top: 60px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- FUNDO BRANCO + SOL + LUA + FLORES -->
-  <div class="decoracao">
-    <div class="sol">☀️</div>
-    <div class="lua">🌙</div>
-
-    <div class="flor flor1">🌸</div>
-    <div class="flor flor2">🌼</div>
-    <div class="flor flor3">🌷</div>
-    <div class="flor flor4">🌺</div>
-  </div>
-
-  <!-- CONVITE -->
-  <div class="convite">
-
-    <div class="emoji">🎉💜🎂</div>
-
-    <h1>Tá convidado!</h1>
-
-    <h2>para comemorar meu aniversário 🥳</h2>
-
-    <div class="idade">
-      Vou fazer 10 anos! 🎈
-    </div>
-
-    <div class="info">
-      📅 <b>12 de outubro</b><br>
-      🕖 <b>Começa às 19h</b><br>
-      📍 <b>Volta Redonda (VR) - RJ</b><br>
-      📍 <b>Greco</b><br>
-      🏠 <b>Rua Dezenove-A, 152 - Bela Vista</b><br>
-      <b>Volta Redonda - RJ</b>
-    </div>
-
-    <button class="botao" onclick="euVou()">
-      💜 Eu vou!
-    </button>
-
-    <div class="final">
-      Espero você para comemorar comigo! ✨
-    </div>
-
-  </div>
-
-  <script>
-    function euVou() {
-
-      const numero = "5524974058995";
-
-      const mensagem =
-        "🎉 Oi! Eu vou ao aniversário do Benjamin! 💜\n" +
-        "📅 12 de outubro\n" +
-        "🕖 Começa às 19h\n" +
-        "📍 Greco\n" +
-        "🏠 Rua Dezenove-A, 152 - Bela Vista, Volta Redonda - RJ";
-
-      const link =
-        "https://wa.me/" +
-        numero +
-        "?text=" +
-        encodeURIComponent(mensagem);
-
-      window.open(link, "_blank");
-    }
-  </script>
-
-</body>
-</html>
 
 
