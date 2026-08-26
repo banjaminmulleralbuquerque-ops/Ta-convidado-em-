@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -15,20 +16,19 @@
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: white;
-      color: #3b245c;
-      text-align: center;
       min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #3b245c;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 25px;
       position: relative;
-      overflow-x: hidden;
+      overflow: hidden;
     }
 
-    /* Decoração do fundo */
+    /* DECORAÇÃO DO FUNDO */
     .decoracao {
       position: fixed;
       inset: 0;
@@ -36,71 +36,90 @@
       z-index: 0;
     }
 
-    .flor {
+    .sol {
       position: absolute;
-      font-size: 38px;
+      top: 25px;
+      left: 25px;
+      font-size: 55px;
     }
-
-    .flor1 { top: 5%; left: 5%; }
-    .flor2 { top: 12%; right: 7%; }
-    .flor3 { bottom: 8%; left: 7%; }
-    .flor4 { bottom: 5%; right: 6%; }
-    .flor5 { top: 45%; left: 2%; }
-    .flor6 { top: 50%; right: 2%; }
 
     .lua {
       position: absolute;
-      top: 3%;
-      right: 25%;
-      font-size: 45px;
+      top: 25px;
+      right: 25px;
+      font-size: 55px;
     }
 
-    .sol {
+    .flor {
       position: absolute;
-      top: 3%;
-      left: 25%;
       font-size: 45px;
     }
 
+    .flor1 {
+      bottom: 25px;
+      left: 20px;
+    }
+
+    .flor2 {
+      bottom: 25px;
+      right: 20px;
+    }
+
+    .flor3 {
+      top: 45%;
+      left: 15px;
+    }
+
+    .flor4 {
+      top: 45%;
+      right: 15px;
+    }
+
+    .flor5 {
+      bottom: 10%;
+      left: 22%;
+    }
+
+    .flor6 {
+      bottom: 10%;
+      right: 22%;
+    }
+
+    /* CARTÃO */
     .convite {
       position: relative;
       z-index: 1;
-      background: white;
       width: 100%;
       max-width: 430px;
-      padding: 25px;
+      background: white;
+      padding: 28px;
       border-radius: 28px;
-      box-shadow: 0 10px 30px rgba(70, 40, 100, 0.2);
-      border: 2px solid #eadcff;
-    }
-
-    .imagem {
-      width: 100%;
-      max-width: 380px;
-      border-radius: 20px;
-      margin-bottom: 15px;
+      border: 3px solid #eadcff;
+      box-shadow: 0 10px 30px rgba(70, 40, 100, 0.18);
+      text-align: center;
     }
 
     .emoji {
       font-size: 45px;
+      margin-bottom: 5px;
     }
 
     h1 {
-      font-size: 42px;
+      font-size: 40px;
       margin: 10px 0;
       color: #7b42c5;
     }
 
     h2 {
-      font-size: 24px;
-      margin: 8px 0 25px;
+      font-size: 22px;
+      margin: 8px 0 22px;
     }
 
     .idade {
-      font-size: 24px;
+      font-size: 23px;
       font-weight: bold;
       background: #eee1ff;
-      padding: 12px;
+      padding: 13px;
       border-radius: 18px;
       margin: 20px 0;
     }
@@ -112,9 +131,8 @@
     }
 
     .botao {
-      display: inline-block;
       margin-top: 15px;
-      padding: 15px 25px;
+      padding: 15px 28px;
       background: #7b42c5;
       color: white;
       border: none;
@@ -137,22 +155,21 @@
 
 <body>
 
-  <!-- FLORES, LUA E SOL NO FUNDO -->
+  <!-- FUNDO BRANCO COM SOL, LUA E FLORES -->
   <div class="decoracao">
     <div class="sol">☀️</div>
     <div class="lua">🌙</div>
 
     <div class="flor flor1">🌸</div>
-    <div class="flor flor2">🌼</div>
-    <div class="flor flor3">🌷</div>
-    <div class="flor flor4">🌸</div>
-    <div class="flor flor5">🌺</div>
+    <div class="flor flor2">🌷</div>
+    <div class="flor flor3">🌼</div>
+    <div class="flor flor4">🌺</div>
+    <div class="flor flor5">🌸</div>
     <div class="flor flor6">🌼</div>
   </div>
 
+  <!-- CONVITE -->
   <div class="convite">
-
-    <img src="imagem.png" alt="Imagem do convite" class="imagem">
 
     <div class="emoji">🎉💜🎂</div>
 
@@ -206,6 +223,5 @@
 
 </body>
 </html>
-
 
 
